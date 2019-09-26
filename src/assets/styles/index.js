@@ -60,23 +60,44 @@ const ButtonFrom = styled.button`
     outline-style: none;
   }
 `
+const LabelItem = styled.label`
+  margin: 0;
+  padding: 5px;
+  width: 300px;
+  border-radius: 5px 5px 0px 0px;
+  color: #fff;
+  text-align: center;
+  background-color: #007bff;
+  border-color: #007bff;
+`
 const UlGroup = styled.ul`
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px;
+  padding-inline-start: 10px;
   display: flex;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  /* color: #fff;
-  background-color: #007bff;
-  border-color: #007bff; */
+ 
 `
 const LiItem =styled.li`
+  position: relative;
+  display: block;
+  color: #000;
+  padding: .75rem 0.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+`
 
+const HrefIcon = styled.div`
+  display: flex;
+  flex:1;
+  width: 100%;
+  text-align: right;
 `
 
 export {
@@ -84,6 +105,8 @@ export {
   FormGroup,
   InputForm,
   ButtonFrom,
+  LabelItem,
   UlGroup,
-  LiItem
+  LiItem,
+  HrefIcon
 }

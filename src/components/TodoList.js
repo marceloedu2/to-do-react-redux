@@ -1,14 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Todo from './Todo'
-import { FormGroup, InputForm, ButtonFrom } from '../assets/styles'
+import { UlGroup, LabelItem } from '../assets/styles'
 
 const TodoList = ({ todos, toggleTodo }) => (
-  <ul>
+  <UlGroup>
+    <LabelItem for="">Lista</LabelItem>
     {todos.map(todo => (
       <Todo key={todo.id} {...todo} onClick={() => toggleTodo(todo.id)} />
     ))}
-  </ul>
+  </UlGroup>
 )
 
 TodoList.propTypes = {
